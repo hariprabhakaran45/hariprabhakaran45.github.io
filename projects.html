@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Hari Prabhakaran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: #111827;
+      color: #e2e8f0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1.5rem;
+      align-items: center;
+      background-color: #0f172a;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      color: #60a5fa;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #cbd5e1;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .projects-header {
+      font-size: 2.2rem;
+      color: #60a5fa;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .content-row {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .projects-section {
+      flex: 2;
+      min-width: 280px;
+    }
+
+    .project-card {
+      background-color: #1e293b;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .project-card h3 {
+      color: #60a5fa;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+    }
+
+    .project-card a {
+      color: #3b82f6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .project-images {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .project-images img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a img {
+      width: 24px;
+      height: 24px;
+      filter: invert(80%);
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+      filter: invert(100%);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .content-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .projects-header {
+        text-align: center;
+        font-size: 2rem;
+      }
+      .project-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .project-images img {
+        flex: 1 1 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>&lt;/&gt; Developer X</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <h2 class="projects-header">My Projects</h2>
+    <div class="content-row">
+
+      <section class="projects-section">
+        <div class="project-card">
+          <h3>E-Commerce with Virtual Trial</h3>
+          <p>
+            A modern e-commerce platform with virtual try-on experience using VITON-HD. Built using Node.js, Express, and MongoDB.
+          </p>
+          <a href="https://github.com/hariprabhakaran45/E-Commerce-With-virtual-Trial-Experience" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Stripe Payment Gateway</h3>
+          <p>
+            PHP + Stripe-based donation system using MySQL for processing secure payments to NGOs.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>UI Clones: Chintam.in & WebFX</h3>
+          <p>
+            Pixel-perfect responsive clones of real websites using HTML, CSS, and JavaScript. Built with attention to detail and animations.
+          </p>
+        </div>
+      </section>
+
+      <div class="project-images">
+        <img src="side-shot-code-editor-using-react-js_181624-61842.avif" alt="Coding Desk">
+        <img src="hi-tech-kod-tekst-programmirovanie-bukvi-simvoli-114031.jpeg" alt="Code Editor">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/hariprabhakaran45" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+      </a>
+      <a href="https://instagram.com/m_r.u_n_l_u_c_k_y_h_a_r_i_45" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/hari-prabhakaran-b0307a290/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+    <p>&copy; 2025 Hari Prabhakaran</p>
+  </footer>
+
+</body>
+</html>

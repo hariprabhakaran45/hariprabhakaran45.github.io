@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Hari Prabhakaran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: #111827;
+      color: #e2e8f0;
+    }
+
+    nav {
+      background-color: #0f172a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      color: #60a5fa;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #cbd5e1;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .about-section {
+        display: flex;
+        align-items: stretch; /* Stretch image and text to same height */
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .about-text h2 {
+      font-size: 2.5rem;
+      color: #60a5fa;
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #cbd5e1;
+    }
+
+    .about-images {
+        flex: 1;
+        min-width: 200px;
+      }
+      
+      .about-images img {
+        width: 100%;
+        height: 100%; /* Take full height of the parent */
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      }
+      
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a img {
+      width: 24px;
+      height: 24px;
+      filter: invert(80%);
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+      filter: invert(100%);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+
+      .about-text h2 {
+        font-size: 2rem;
+      }
+
+      .about-text p {
+        font-size: 1rem;
+      }
+
+      .about-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 300px;
+      }
+
+      .about-images img {
+        height: auto; /* Reset height on mobile */
+      }
+    
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>&lt;/&gt; Developer X</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="about-section">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm <strong>Hari Prabhakaran S</strong>, a passionate full-stack developer with expertise in HTML, CSS, JavaScript, Node.js, Express.js, Bootstrap, and MySQL. I enjoy building responsive websites and solving real-world problems with code.
+        </p>
+        <p>
+          Currently, I’m learning SAP ABAP and expanding my backend knowledge to become a complete enterprise-grade developer.
+        </p>
+      </div>
+
+      <div class="about-images">
+        <img src="360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg" alt="Coding Screenshot 1">
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/hariprabhakaran45" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+      </a>
+      <a href="https://instagram.com/m_r.u_n_l_u_c_k_y_h_a_r_i_45" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/hari-prabhakaran-b0307a290/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+    <p>&copy; 2025 Hari Prabhakaran</p>
+  </footer>
+
+</body>
+</html>
