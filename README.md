@@ -1,6 +1,6 @@
 #  Hari Prabhakaran — Portfolio Website
 
-**Live Demo:** [hariprabhakaran45.github.io]([https://hariprabhakaran45.github.io](https://hariprabhakaran45.github.io/Portfolio/))  
+**Live Demo:** [(https://hariprabhakaran45.github.io/Portfolio/)]
 A modern, responsive portfolio website showcasing my **skills, projects, and blog** as a **Full-Stack Developer, SAP ABAP Consultant, and Python Developer**.
 
 ---
